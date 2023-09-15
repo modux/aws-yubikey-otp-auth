@@ -14,6 +14,7 @@ This is a bash script so will work in WSL or native Linux
 ```
 https://docs.yubico.com/software/yubikey/tools/ykman/Install_ykman.html
 ```
+Pre-MFA AWS profiles need to be suffiexed with -auth
 
 ## Usage
 
