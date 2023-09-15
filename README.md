@@ -11,6 +11,9 @@ This is a bash script so will work in WSL or native Linux
 
  - ./ykman on Linux
  - ykman.exe on WSL
+```
+https://docs.yubico.com/software/yubikey/tools/ykman/Install_ykman.html
+```
 
 ## Usage
 
