@@ -44,7 +44,6 @@ YUBIKEY=$(${YKMAN_EXE} list --serials | grep -oh "[[:digit:]]*")
 AWS_USER=$(aws iam get-user  --profile "$AWS_CLI_PROFILE"-auth --output text --query 'User.UserName')
 ARN_OF_MFA=$(aws iam list-mfa-devices --user-name $AWS_USER  --profile "$AWS_CLI_PROFILE"-auth --output text --query 'MFADevices[*].SerialNumber')
 
-cmd.exe /c "powershell "[console]::beep\(500,300\)""
 MFA_TOKEN_CODE=$(${YKMAN_EXE} --device $YUBIKEY oath accounts code $ARN_OF_MFA | grep -oh "\s[[:digit:]]*" | xargs)
 echo $MFA_TOKEN_CODE
 
