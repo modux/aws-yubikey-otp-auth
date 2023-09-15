@@ -1,2 +1,4 @@
 # aws-yubikey-otp-auth
-AWS Yubikey OTP Auth
+AWS CLI & EKS Yubikey OTP / MFA Authentication
+
+
